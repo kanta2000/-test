@@ -1,2 +1,22 @@
-<h1>Blogs#show</h1>
-<p>Find me in app/views/blogs/show.html.erb</p>
+<h1>詳細ページ</h1>
+
+<h3 class="blog-box-heading">
+  
+<h3 class="blog-box-heading"> 
+<%= @blog.title %>
+</p>
+
+<div class="blog-box-content">
+<%= @blog.category %>
+</p>
+
+<p class="blog-date">
+<%= @blog.created_at %>
+</p>
+
+<p class="single-text">
+<%= @blog.body %>
+</p>
+
+<a href="#">編集</a>
+<a href="#">削除</a>
