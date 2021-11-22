@@ -2,11 +2,11 @@
 <p>ここに企画など記載</p>
 
 <% @blogs.each do |blog| %>
-        <div class="blog-item">
-          <section class="blog-text">
-            <h3 class="blog-text-heading"><%= link_to blog.title, blog_path(blog) %></h3>
-            <p class="blog-date"><%= blog.created_at %></p>
-            <span class="category"><%= blog.category %></span>
-          </section>
-        </div>
-      <% end %>
+  <div class="blog-item">
+    <section class="blog-text">
+      <h3 class="blog-text-heading"><%= link_to blog.title, blog_path(blog) %></h3>
+      <p class="blog-date"><%= blog.created_at %></p>
+      <span class="category"><%= blog.category %></span>
+    </section>
+  </div>
+<% end %>
